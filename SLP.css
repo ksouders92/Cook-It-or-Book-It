@@ -1,8 +1,8 @@
 :root {
     --container-bg-color: rgb(121, 91, 122);
-    --left-bg-color: rgba(218, 84, 177, 0.9);
+    --left-bg-color: rgba(248, 10, 177, 0.9);
     --left-button-hover-color: rgba(95, 47, 89, 0.4);
-    --right-bg-color: rgba(95, 51, 51, 0.7);
+    --right-bg-color: rgba(112, 6, 6, 0.7);
     --right-button-hover-color: rgba(27, 22, 22, 0.4);
     --hover-width: 75%;
     --other-width: 25%;
