@@ -13,7 +13,7 @@ function getRecipes() {
       });
 }
 
-$('#recipeSearch').on('submit', function (e) {
+$('#runSearch').on('submit', function (e) {
   e.preventDefault()
   getRecipes()
 })
@@ -43,4 +43,5 @@ $('#recipeSearch').on('submit', function (e) {
           // .yield pulls up how many servings
           yield: recipes.hits[0].recipe.yield
       }
+      $('#recipeHere').append($edamamApiRecipe);
     };
