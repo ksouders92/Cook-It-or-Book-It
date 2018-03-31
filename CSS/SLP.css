@@ -68,7 +68,7 @@
   
   .split.left {
     left:0;
-    background: url('images/image1.jpeg') center center no-repeat;
+    background: url('../images/image1.jpeg') center center no-repeat;
     background-size: cover;
   }
   
@@ -82,7 +82,7 @@
   
   .split.right {
     right:0;
-    background: url('images/image3.jpeg') center center no-repeat;
+    background: url('../images/image3.jpeg') center center no-repeat;
     background-size: cover;
   }
   
