@@ -7,7 +7,7 @@ var cors = "https://cors-anywhere.herokuapp.com/"
 // getting recipe from edamam API
 function getRecipes() {
 
-  var search = document.getElementById('search').value
+  var search = document.getElementById('recipeSearch').value
         document.getElementById('results').innerHTML = ""
         console.log(search)
   
@@ -17,20 +17,14 @@ function getRecipes() {
   
       success: function (data) {
         for (i = 0; i < data.hits.length; i++) {
-          results.innerHTML += "<h5>" + data.hits[i].recipe.image + "</h5>"
           results.innerHTML += "<h5>" + data.hits[i].recipe.label + "</h5>"
           results.innerHTML += "<h5>" + data.hits[i].recipe.url + "</h5>"
           results.innerHTML += "<h5>" + data.hits[i].recipe.shareAs + "</h5>"
-          results.innerHTML += "<h5>" + data.hits[i].recipe.yield + "</h5>"
-          results.innerHTML += "<h5>" + data.hits[i].recipe.ingredients + "</h5>"
           }
-      method: "GET"     
-      }
+        },
+      type: 'GET'     
     });
-  
-  $('#recipeSearch').on('submit', function (e) {
-  e.preventDefault(),
-  
-  getRecipes()
-  });
-}
+
+  };
+
+  document.getElementById('runSearch').addEventListener('click', getRecipes, false);
