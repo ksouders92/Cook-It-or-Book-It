@@ -28,7 +28,7 @@
 
       $(function() {
         $('#runSearch').on('click', function() {
-          var search = $('#restaurantSearch').val().trim();
+          var search = $('#restaurantHere').val().trim();
           getYelpResults(search);
         });
       });
