@@ -16,8 +16,7 @@
 <body>
 
     <div class="container">
-<div class="jumbrotron">
-<<<<<<< HEAD
+<div class="jumbotron">
     <nav class="navbar navbar-light bg-light justify-content-between">
         <a class="navbar-brand">What Do You Want to Cook?</a>
         <form class="form-inline">
@@ -25,7 +24,7 @@
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </nav>
-=======
+
         <div class="form-group">
                 <label for="search">Find a recipe...</label>
                 <input type="text" class="form-control" id="recipeSearch">
@@ -34,9 +33,13 @@
               </div>
               <br>
               <div id="results"></div>
->>>>>>> a2d17196127234eb8b19fc28bd5424ede3a66932
+
 </div>
-<div id= "recipeHere" class ="jumbrotron"> </div>
+<!-- button that sends you to the book it html page -->
+<div><button type="button" a href="./bookIt.html" class= "btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+    Would you rather book it?
+  </button></div>
+<div id= "recipeHere" class= "jumbrotron"> </div>
     
     </div>
 
@@ -45,13 +48,9 @@
             <div class="container">
          <span class="text-muted">Sign-up for our newsletter</span> 
             <form class="form-inline">
-                <!-- <div class="form-group mb-2">
-                  <label for="newsletter" class="sr-only">signup</label>
-                  <input type="text" readonly class="form-control-plaintext" id="newsletter" value="Recieve our newsletters">
-                </div> -->
                 <div class="form-group mx-sm-3 mb-2">
                   <label for="inputEmail" class="sr-only">email</label>
-                  <input type="text" class="form-control" id="inputEmail" placeholder="enter your e-mail">
+                  <input type="email" class="form-control" id="inputEmail" placeholder="enter your e-mail">
                 </div>
                 <button type="submit" id= "submit" class="btn btn-primary mb-2">Submit</button>
               </form>
