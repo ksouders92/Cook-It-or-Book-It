@@ -18,8 +18,8 @@
               var name = $('<h2>').text(business.name);
               var phone = $('<h2>').text(business.phone);
               var rating = $('<h2>').text(business.rating);              
-              var link = $('<a>').attr('href', business.url).text(business.url);
-              newDiv.append("restaurant Name:",name, "Phone:",phone,"Rating:",rating,"Web Page:","<br>", link,"<hr>").appendTo($('.jumbotron'))
+              var link = $('<a>').attr('href', business.url).text(business.url).text("Restaurant Website");
+              newDiv.append("<span class='title'>Restaurant Name:</span>",name, "<span class='title'>Phone:</span>",phone,"<span class='title'>Rating:</span>",rating,"<span class='title'>Web Page:</span>","<br>", link,"<hr>").appendTo($('.jumbotron'))
             });
           },
         })
