@@ -11,12 +11,9 @@
 
   var db = firebase.database();
 
-//   var emailSignUp = {
-//     email: email
-// };
 
 $(document).ready(function () {
-  // submit button
+  // submit button is an on click function that will store to firebase 
   $('#submit').on('click', function (event) {
 
       event.preventDefault();
