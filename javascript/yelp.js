@@ -53,7 +53,6 @@ function getYelpResults(input) {
   })
 }
 
-
 $(function() {
   $('#runSearch').on('click', function() {
     var search = $('#restaurantSearch').val().trim();
