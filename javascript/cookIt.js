@@ -8,7 +8,7 @@ var cors = "https://cors-anywhere.herokuapp.com/"
 function getRecipes() {
 
   var search = document.getElementById('recipeSearch').value
-        document.getElementById('results').innerHTML = ""
+        document.getElementById('recipeHere').innerHTML = ""
         console.log(search)
   
   $.ajax({
@@ -17,9 +17,30 @@ function getRecipes() {
   
       success: function (data) {
         for (i = 0; i < data.hits.length; i++) {
-          results.innerHTML += "<h5>" + data.hits[i].recipe.label + "</h5>"
-          results.innerHTML += "<h5>" + data.hits[i].recipe.url + "</h5>"
-          results.innerHTML += "<h5>" + data.hits[i].recipe.shareAs + "</h5>"
+          var div = $('<div>', {
+            class: recipeDiv
+          });
+          
+          var heading = $('<h5>', {
+            class: header
+          })
+          .text(data.hits[i].recipe.label);
+          
+          var link = $('<a>', { 
+            href: data.hits[i].recipe.url,
+            class: link
+          })
+          .text('Link to Recipe');
+          
+          var image = $('<img>', { 
+            src: data.hits[i].recipe.image, 
+            alt: 'Recipe image',
+            class: recipeImage
+           });
+  
+          div.append(heading, link, image)
+             .appendTo(recipeHere);
+
           }
         },
       type: 'GET'     
