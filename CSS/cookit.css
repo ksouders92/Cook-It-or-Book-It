@@ -7,11 +7,7 @@ body {
 
 }
 
-.header {
-    font-family: 'Great Vibes', cursive;
-    font-size: 36px;
 
-}
 
 .link {
     font-family: 'Great Vibes', cursive;
@@ -49,9 +45,15 @@ body {
    a{
        font-size: 12x; 
    }
-   
-   .title{
-       font-family: 'Great Vibes', cursive; 
-       font-size: 25px;
-       color: white;
-   }
+
+   .header {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    right: 70px;
+}
