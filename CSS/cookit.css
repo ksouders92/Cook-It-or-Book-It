@@ -2,6 +2,7 @@ body {
     background-image: url("../images/image1.jpeg")
 }
 
+
 .recipeDiv {
 
 }
@@ -22,4 +23,8 @@ body {
     width: 200px;
     height: 200px;
     margin: 0 auto;
+  
+#recipeHere {
+    height: 800px;
+    width: 500px;
 }
