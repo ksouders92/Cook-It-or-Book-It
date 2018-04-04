@@ -2,7 +2,7 @@ body {
     background-image: url("../images/image1.jpeg")
 }
 
-
+/* 
 .recipeDiv {
 
 }
@@ -27,4 +27,31 @@ body {
 #recipeHere {
     height: 800px;
     width: 500px;
-}
+} */
+
+.jumbotron {
+    position: relative;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.486);
+   }
+   a{ word-wrap: break-word;
+   
+   }
+   h2, a{
+      
+       font-size: 15px;
+       color: rgb(209, 207, 207);
+   }
+   label{
+       color: white;
+       font-size:25px;
+   }
+   a{
+       font-size: 12x; 
+   }
+   
+   .title{
+       font-family: 'Great Vibes', cursive; 
+       font-size: 25px;
+       color: white;
+   }
