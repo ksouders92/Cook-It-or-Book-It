@@ -18,27 +18,28 @@ function getRecipes() {
       success: function (data) {
         for (i = 0; i < data.hits.length; i++) {
           var div = $('<div>', {
-            class: recipeDiv
+            class: "recipeDiv"
           });
           
           var heading = $('<h5>', {
-            class: header
+            class: "header"
           })
           .text(data.hits[i].recipe.label);
-          
-          var link = $('<a>', { 
-            href: data.hits[i].recipe.url,
-            class: link
-          })
-          .text('Link to Recipe');
           
           var image = $('<img>', { 
             src: data.hits[i].recipe.image, 
             alt: 'Recipe image',
-            class: recipeImage
+            class: "recipeImage"
            });
+          
+          var link = $('<a>', { 
+            href: data.hits[i].recipe.url,
+            class: "link"
+          })
+          .text('Link to Recipe');
+          
   
-          div.append(heading, link, image)
+          div.append(heading, link, "<br>", image, "<br", "<hr>")
              .appendTo(recipeHere);
 
           }
