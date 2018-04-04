@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,34 +12,56 @@
     <!-- CSS file -->
     <link type="text/css" rel="stylesheet" href="../CSS/bookIt.css">
     <title>Cook it or Book it?</title>
+
 </head>
 
 <body>
 
-    <div class="container">
-<div class="jumbotron">
-    <nav class="navbar navbar-light bg-light justify-content-between">
-        <a class="navbar-brand">Where do you want to eat?</a>
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Look for a restaurant..." aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </nav>
+<div class="container">
+        
+        <div class="jumbotron">
+                <div class="form-group">
+                        <label for="search">Search for a restaurant or cuisine...</label>
+                        <input type="text" class="form-control" id="restaurantSearch" placeholder="Search for a restaurant or cuisine...">
+                        <br>
+                        <button type="submit" class="btn btn-default" id="runSearch">
+                                <i class="fa fa-search"></i> Search</button>
+                        <button type="button" class= "btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                          <a href="./cookIt.html">Would you rather cook it?</a>
+                        </button>
+                                
+                </div>
+        
+        </div>
+        <div id="restaurantHere" class ="jumbotron " >
+                <div class="information">
+
+                </div>   
+        </div>
 </div>
-<div class ="jumbotron"> </div>
-    
-    </div>
-
-    <footer id="emailSignUp">
-
+        
+<footer id="emailSignUp">
+        <footer class="footer">
+            <div class="container">
+         <span class="text-muted">Sign-up for our newsletter</span> 
+            <form class="form-inline">
+                <div class="form-group mx-sm-3 mb-2">
+                  <label for="inputEmail" class="sr-only">email</label>
+                  <input type="email" class="form-control" id="inputEmail" placeholder="enter your e-mail">
+                </div>
+                <button type="submit" id= "submit" class="btn btn-primary mb-2">Submit</button>
+              </form>
+              </div>
+          </footer>
     </footer>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-    <!-- link to javascripts -->
-    <!-- <script src="./javascript/firebase.js"></script> -->
-    <script src="../javascript/yelp.js"></script>
-</body>
-
+        
+        </footer>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+        <!-- link to javascripts -->
+        <!-- <script src="./javascript/firebase.js"></script> -->
+        <script src="../javascript/yelp.js"></script>
+  </body>
 </html>
