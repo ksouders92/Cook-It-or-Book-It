@@ -1,3 +1,25 @@
 body {
     background-image: url("../images/image1.jpeg")
 }
+
+.recipeDiv {
+
+}
+
+.header {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+
+}
+
+.link {
+    font-family: 'Great Vibes', cursive;
+    font-size: 24px;
+    
+}
+
+.recipeImage {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
