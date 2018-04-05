@@ -12,61 +12,61 @@
         crossorigin="anonymous">
     <!-- CSS file -->
     <link type="text/css" rel="stylesheet" href="../CSS/cookit.css">
-    <title>Cook it or Book it?</title>
+    <!-- flavicon -->
+    <link rel="icon" href="../images/edamam.jpg">
+
+    <title>Cook it</title>
+
 </head>
 
 <body>
-
     <div class="container">
-<div class="jumbotron">
 
-    <nav class="navbar navbar-light bg-light justify-content-between">
-        <a class="navbar-brand">What Do You Want to Cook?</a>
-      </nav>
-
-        <div class="form-group">
-                <input type="text" class="form-control" id="recipeSearch" placeholder="Find a recipe...">
+        <div class="jumbotron">
+            <div class="form-group">
+                <label for="search"><h1>What would you like to make?</h1></label>
+                <input type="text" class="form-control" id="recipeSearch" placeholder="Search for a recipe...">
+                <br>
                 <button type="submit" class="btn btn-default" id="runSearch">
-                        <i class="fa fa-search"></i> Search</button>
-              </div>
+                    <i class="fa fa-search"></i> Search</button>
+                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <a href="./bookIt.html">Would you rather book it?</a>
+                </button>
 
-              <br>
-</div>
+            </div>
 
-<br>
+        </div>
+        <div id="recipeHere" class="jumbotron ">
+            <div class="information">
 
-<!-- button that sends you to the book it html page -->
-<div><button type="button" a href="./bookIt.html" class= "btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-    Would you rather book it?
-  </button></div>
-
-
-<div id= "recipeHere" class ="jumbotron"> </div>
-
-    
+            </div>
+        </div>
     </div>
 
     <footer id="emailSignUp">
         <footer class="footer">
             <div class="container">
-         <span class="text-muted">Sign-up for our newsletter</span> 
-            <form class="form-inline">
-                <div class="form-group mx-sm-3 mb-2">
-                  <label for="inputEmail" class="sr-only">email</label>
-                  <input type="email" class="form-control" id="inputEmail" placeholder="enter your e-mail">
-                </div>
-                <button type="submit" id= "submit" class="btn btn-primary mb-2">Submit</button>
-              </form>
-              </div>
-          </footer>
+                <span class="text"><strong>Sign-up for our newsletter supporting World Food Bank</strong></span>
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="inputEmail" class="sr-only">email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="enter your e-mail">
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-primary mb-2">Submit</button>
+                </form>
+            </div>
+        </footer>
     </footer>
+
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <!-- link to javascripts -->
     <script src="../javascript/firebase.js"></script>
     <script src="../javascript/cookIt.js"></script>
-    <body>
+
+</body>
 
 </html>
