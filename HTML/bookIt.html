@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
@@ -11,7 +12,10 @@
 crossorigin="anonymous">
 <!-- CSS file -->
 <link type="text/css" rel="stylesheet" href="../CSS/bookIt.css">
-<title>CoBSPL</title>
+<!-- flavicon -->
+<link rel="icon" href="../images/Yelp.png">
+<title>Book it</title>
+
 </head>
 
 <body>
@@ -20,7 +24,7 @@ crossorigin="anonymous">
         
         <div class="jumbotron">
                 <div class="form-group">
-                        <label for="search">Search for a restaurant or cuisine...</label>
+                        <label for="search"><h1>Where would you like to dine?</h1></label>
                         <input type="text" class="form-control" id="restaurantSearch" placeholder="Search for a restaurant or cuisine...">
                         <br>
                         <button type="submit" class="btn btn-default" id="runSearch">
@@ -42,7 +46,7 @@ crossorigin="anonymous">
 <footer id="emailSignUp">
         <footer class="footer">
             <div class="container">
-         <span class="text-muted">Sign-up for our newsletter</span> 
+                        <span class="text"><strong>Sign-up for our newsletter supporting World Food Bank</strong></span>
             <form class="form-inline">
                 <div class="form-group mx-sm-3 mb-2">
                   <label for="inputEmail" class="sr-only">email</label>
@@ -60,7 +64,7 @@ crossorigin="anonymous">
         <!-- Firebase -->
         <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
         <!-- link to javascripts -->
-        <!-- <script src="./javascript/firebase.js"></script> -->
+        <script src="../javascript/firebase.js"></script>
         <script src="../javascript/yelp.js"></script>
   </body>
 </html>
