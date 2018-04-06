@@ -73,7 +73,7 @@ span {
     background-color:rgb(255, 193, 58);
     border-color: black;
 }
-#runSearch, #submit, button{
+#runSearch, #submit, #cookItButton, button{
     background-color:rgb(255, 193, 58);
     border-color: black; 
     color: white;
