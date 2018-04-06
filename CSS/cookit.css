@@ -82,10 +82,16 @@ h5 {
     .button {
       width: 12rem;
     }
+    .form-control{
+        width: 100%;
+    }
   }
   
   @media(max-height: 700px) {
     .button {
       top: 70%;
+    }
+    .form-control{
+        width: 100%;
     }
   }
