@@ -39,10 +39,12 @@
     text-align: center;
     color: rgb(11, 15, 17);
     border: rgb(18, 22, 22) solid 0.2rem;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     text-decoration: none;
     transform: translateX(-50%);
+    background-color: #5c5c8a;
+    
   }
   
   .split.left .button:hover {

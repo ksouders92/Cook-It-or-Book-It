@@ -93,3 +93,18 @@ span {
     font-size: 40px;   
     text-shadow: 2px 2px black; 
 }
+@media(max-width: 800px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .button {
+      width: 12rem;
+    }
+  }
+  
+  @media(max-height: 700px) {
+    .button {
+      top: 70%;
+    }
+  }

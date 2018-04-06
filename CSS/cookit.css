@@ -71,3 +71,21 @@ button, #bookItButton, #submit {
 .form-control {
     width: 33%
 }
+h5 {
+    font-size: 48px;
+}
+@media(max-width: 800px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .button {
+      width: 12rem;
+    }
+  }
+  
+  @media(max-height: 700px) {
+    .button {
+      top: 70%;
+    }
+  }
