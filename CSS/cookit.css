@@ -52,7 +52,7 @@ hr {
     height: 1px;
 }
 
-button, #bookItButton, #footButt {
+button, #bookItButton, #submit {
     background-color: rgb(219, 136, 27);
     color: #eee;
     border: none;
