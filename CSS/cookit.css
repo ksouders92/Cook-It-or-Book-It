@@ -17,7 +17,7 @@ body {
 
 a { 
     word-wrap: break-word;
-    font-size: 12x; 
+   
 }
 
 h2, a {  
@@ -65,7 +65,7 @@ button, #bookItButton, #submit {
 
 .navbar-brand {
     font-family: 'Great Vibes', cursive;
-    font-size: 36px;   
+    font-size: 40px;     
 }
 
 .form-control {

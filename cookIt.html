@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <!-- CSS file -->
-    <link type="text/css" rel="stylesheet" href="../CSS/cookit.css">
-
+    <link type="text/css" rel="stylesheet" href="./CSS/cookit.css">
+    <!-- flavicon -->
+    <link rel="icon" href="./images/edamam.jpg">
     <title>Cook it</title>
 
 </head>
@@ -20,57 +21,58 @@
 <body>
 
     <div class="container">
-<div class="jumbotron">
+        <div class="jumbotron">
 
-    <nav class="navbar navbar-light bg-light justify-content-between" id="brandBar">
-        <a class="navbar-brand">What Do You Want to Cook?</a>
-      </nav>
+            <nav class="navbar navbar-light bg-light justify-content-between" id="brandBar">
+                <a class="navbar-brand">What do you want to cook?</a>
+            </nav>
 
-        <div class="form-group">
+            <div class="form-group">
                 <input type="text" class="form-control" id="recipeSearch" placeholder="Find a recipe...">
                 <br>
                 <button type="submit" class="btn btn-default" id="runSearch">
-                        <i class="fa fa-search"></i> Search</button>
-                <button type="button" id= "bookItButton" class= "btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                  <a href="./bookIt.html">Would you rather "Book it"?</a>
+                    <i class="fa fa-search"></i> Search</button>
+                <button type="button" id="bookItButton" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <a href="./bookIt.html">Would you rather "book it"?</a>
                 </button>
-              </div>
+            </div>
 
-              <br>
-</div>
+            <br>
+        </div>
 
-<br>
+        <br>
 
 
 
-<div id="recipeHere" class ="jumbotron"> </div>
+        <div id="recipeHere" class="jumbotron"> </div>
 
-    
+
     </div>
 
     <footer id="emailSignUp">
         <footer class="footer">
             <div class="container">
-         <span class="text-muted">Sign-up for our newsletter</span> 
-            <form class="form-inline">
-                <div class="form-group mx-sm-3 mb-2">
-                  <label for="inputEmail" class="sr-only">email</label>
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Enter your e-mail address" required autofocus>
-                  <!-- <input type="email" class="form-control" id="inputEmail" placeholder="enter your e-mail"> -->
-                </div>
-                <button type="submit" id="submit" class="btn btn-primary mb-2">Submit</button>
-              </form>
-              </div>
-             
-          </footer>
+                <span class="text"><strong>Sign-up for our newsletter supporting World Food Bank</strong></span>
+                <form class="form-inline">
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="inputEmail" class="sr-only">email</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Enter your e-mail" required autofocus>
+                    </div>
+                    <button type="submit" id="submit" class="btn btn-primary mb-2">Submit</button>
+                </form>
+            </div>
+
+        </footer>
     </footer>
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <!-- link to javascripts -->
-    <script src="../javascript/firebase.js"></script>
-    <script src="../javascript/cookIt.js"></script>
+    <script src="./javascript/firebase.js"></script>
+    <script src="./javascript/cookIt.js"></script>
+
     <body>
 
 </html>

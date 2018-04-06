@@ -3,68 +3,90 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!-- Bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-crossorigin="anonymous">
-<!-- CSS file -->
-<link type="text/css" rel="stylesheet" href="../CSS/bookIt.css">
-<!-- flavicon -->
-<link rel="icon" href="../images/Yelp.png">
-<title>Book it</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+                crossorigin="anonymous">
+        <!-- CSS file -->
+        <link type="text/css" rel="stylesheet" href="./CSS/bookIt.css">
+        <!-- flavicon -->
+        <link rel="icon" href="./images/Yelp.png">
+
+        <title>Book it</title>
 
 </head>
 
 <body>
 
-<div class="container">
+        <div class="container">
+
+                <div class="jumbotron">
+
+            <nav class="navbar navbar-light bg-light justify-content-between" id="brandBar">
+                        <a class="navbar-brand">Where do you want to dine?</a>
+                    </nav>
         
-        <div class="jumbotron">
-                <div class="form-group">
-                        <label for="search"><h1>Where would you like to dine?</h1></label>
+                    <div class="form-group">
                         <input type="text" class="form-control" id="restaurantSearch" placeholder="Search for a restaurant or cuisine...">
                         <br>
                         <button type="submit" class="btn btn-default" id="runSearch">
-                                <i class="fa fa-search"></i> Search</button>
-                        <button type="button" class= "btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                          <a href="./cookIt.html">Would you rather "cook it"?</a>
+                            <i class="fa fa-search"></i> Search</button>
+                        <button type="button" id="cookItButton" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                            <a href="./cookIt.html">Would you rather "cook it"?</a>
                         </button>
-                                
-                </div>
-        
-        </div>
-        <div id="restaurantHere" class ="jumbotron " >
-                <div class="information">
+                    </div>
 
-                </div>   
-        </div>
-</div>
-        
-<footer id="emailSignUp">
-        <footer class="footer">
-            <div class="container">
-                        <span class="text"><strong>Sign-up for our newsletter supporting World Food Bank</strong></span>
-            <form class="form-inline">
-                <div class="form-group mx-sm-3 mb-2">
-                  <label for="inputEmail" class="sr-only">email</label>
-                  <input type="email" class="form-control" id="inputEmail" placeholder="enter your e-mail">
+                        <!-- <div class="form-group">
+                                <label for="search">
+                                        <h1>Where would you like to dine?</h1>
+                                </label>
+                                <input type="text" class="form-control" id="restaurantSearch" placeholder="Search for a restaurant or cuisine...">
+                                <br>
+                                <button type="submit" class="btn btn-default" id="runSearch">
+                                        <i class="fa fa-search"></i> Search</button>
+                                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                                        <a href="./cookIt.html">Would you rather "Cook it"?</a>
+                                </button>
+
+                        </div> -->
+
                 </div>
-                <button type="submit" id= "submit" class="btn btn-primary mb-2">Submit</button>
-              </form>
-              </div>
-          </footer>
-    </footer>
-        
+                <div id="restaurantHere" class="jumbotron ">
+                        <div class="information">
+
+                        </div>
+                </div>
+        </div>
+
+        <footer id="emailSignUp">
+                <footer class="footer">
+                        <div class="container">
+                                <span class="text">
+                                        <strong>Sign-up for our newsletter supporting World Food Bank</strong>
+                                </span>
+                                <form class="form-inline">
+                                        <div class="form-group mx-sm-3 mb-2">
+                                                <label for="inputEmail" class="sr-only">email</label>
+                                                <input type="email" class="form-control" id="inputEmail" placeholder="Enter your e-mail">
+                                        </div>
+                                        <button type="submit" id="submit" class="btn btn-primary mb-2">Submit</button>
+                                </form>
+                        </div>
+                </footer>
+        </footer>
+
         </footer>
         <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+                crossorigin="anonymous"></script>
         <!-- Firebase -->
         <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
         <!-- link to javascripts -->
-        <script src="../javascript/firebase.js"></script>
-        <script src="../javascript/yelp.js"></script>
-  </body>
+        <script src="./javascript/firebase.js"></script>
+        <script src="./javascript/yelp.js"></script>
+</body>
+
 </html>
