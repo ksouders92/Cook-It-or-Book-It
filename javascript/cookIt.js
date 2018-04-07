@@ -36,7 +36,7 @@ function getRecipes() {
             href: data.hits[i].recipe.url,
             class: "link"
           })
-          .text('Link to Recipe');
+          .text('Link to Recipe').attr('target' ,'_blank');
           
   
           div.append(heading, link, "<br>", image, "<br", "<hr>")
@@ -50,3 +50,4 @@ function getRecipes() {
   };
 
   document.getElementById('runSearch').addEventListener('click', getRecipes, false);
+  
