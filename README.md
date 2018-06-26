@@ -11,3 +11,6 @@ Syyad Khan created the split landing page where you choose whether to "Cook It" 
 Billy Harber created and styled the "Cook It" page and worked with the Edamam API with help from Syyad Khan
 Jaime Salazar created and styled the "Book It" page and worked with the Yelp API
 Kathleen Souders used firebase to store data from users who choose to sign up for the "Cook It or Book It" newsletter supporting World Food Bank
+
+## Deployment
+https://ksouders92.github.io/Cook-It-or-Book-It/
